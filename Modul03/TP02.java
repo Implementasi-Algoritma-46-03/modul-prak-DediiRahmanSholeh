@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class TPO2 {
+public class TP02 {
 
     public static void main(String[] args) {
 
