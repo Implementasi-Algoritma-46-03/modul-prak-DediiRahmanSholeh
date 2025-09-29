@@ -1,8 +1,8 @@
 ## Identitas
 
-Nama: 
+Nama: DEDI RAHMAN SHOLEH
 
-NIM : 
+NIM : 07062500049
 
 ## Instruksi
 
