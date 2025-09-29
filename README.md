@@ -2,7 +2,7 @@
 
 Nama: DEDI RAHMAN SHOLEH
 
-NIM : 07062500049
+NIM : 607062500049
 
 ## Instruksi
 
