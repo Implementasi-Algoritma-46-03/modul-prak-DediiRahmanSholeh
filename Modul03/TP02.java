@@ -1,22 +1,20 @@
 import java.util.Scanner;
 
+import java.util.Scanner;
 public class TP02 {
 
     public static void main(String[] args) {
+        Scanner tugas2 = new Scanner(System.in);
+         // Kerjakan soalnya di sini
 
-        Scanner inputScanner = new Scanner(System.in);
+        String nama = tugas2.next();
+        int jumlah = tugas2.nextInt();
+        int harga = tugas2.nextInt();
 
-       
-        String namaPembeli = inputScanner.next(); 
+        int total = harga * jumlah;
 
-        int jumlahBarang = inputScanner.nextInt(); 
-      
-        int hargaPerbarang = inputScanner.nextInt();
-  
-        int totalBelanja = jumlahBarang * hargaPerbarang;
+        System.out.println("Hi, " + nama + ". Total belanja adalah " + total + " rupiah.");
 
-        System.out.println("Hi, " + namaPembeli + ". Total belanja adalah " + totalBelanja + " rupiah");
-
-       
-      }
+        tugas2.close();
     }
+}
