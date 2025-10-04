@@ -11,5 +11,6 @@ public class Jurnal01 {
         System.out.println(jumlahLembar);
         int sisaUang = jumlahUang % 1000;
         System.out.println(sisaUang);
+        
     }
 }
