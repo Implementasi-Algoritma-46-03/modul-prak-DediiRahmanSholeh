@@ -17,13 +17,13 @@ public class Jurnal03 {
             if (Dira < Idar) {
                 System.out.println("Radi, Dira, Idar");
             } else {
-                System.out.println("Radi, Idar ,Dira");
+                System.out.println("Radi, Idar, Dira");
             }
         } else {
             if (Dira < Radi) {
                 System.out.println("Idar, Dira, Radi");
             } else {
-                System.out.println("Idar, Radi,Dira");
+                System.out.println("Idar, Radi, Dira");
             }
         }
 
