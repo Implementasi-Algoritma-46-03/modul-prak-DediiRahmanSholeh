@@ -10,13 +10,22 @@ public class Jurnal03 {
         if (Dira < Radi && Dira < Idar) {
             if (Radi < Idar) {
                 System.out.println("Dira, Radi, Idar");
-            } else if (Idar < Radi) {
-                System.out.println("Radi, Idar, Dira");
-            } else if (Idar < Dira) {
+            } else {
+                System.out.println(" Dira, idar, Radi");
+            }
+        } else if (Radi < Dira && Radi < Idar) {
+            if (Dira < Idar) {
+                System.out.println("Radi, Dira, Idar");
+            } else {
+                System.out.println("Radi, Idar ,Dira");
+            }
+        } else {
+            if (Dira < Radi) {
                 System.out.println("Idar, Dira, Radi");
             } else {
-                System.out.println("Dira, Radi, Idar");
+                System.out.println("Idar, Radi,Dira");
             }
         }
+
     }
 }
