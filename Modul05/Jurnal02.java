@@ -52,7 +52,7 @@ public class Jurnal02 {
                 hasilHari = "Kamis";
                 break;
             case 4:
-                hasilHari = "Jum'at";
+                hasilHari = "Jumat";
                 break;
             case 5:
                 hasilHari = "Sabtu";
