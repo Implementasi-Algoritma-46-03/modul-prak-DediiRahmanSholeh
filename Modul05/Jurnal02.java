@@ -21,7 +21,7 @@ public class Jurnal02 {
             case "Kamis":
                 namaHari = 3;
                 break;
-            case "Jum'at":
+            case "Jumat":
                 namaHari = 4;
                 break;
             case "Sabtu":
