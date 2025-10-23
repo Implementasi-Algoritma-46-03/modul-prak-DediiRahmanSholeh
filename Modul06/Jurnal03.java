@@ -19,10 +19,9 @@ public class Jurnal03 {
 
     public static void main(final String[] args) {
         Scanner input = new Scanner(System.in);
-        int r = input.nextInt(); //jari-jari
-        int h = input.nextInt(); //tinggi
-        int t = input.nextInt(); //tinggi air
-
+        int r = input.nextInt(); 
+        int h = input.nextInt(); 
+        int t = input.nextInt(); 
         double hasilVol = maxVol(r, h);
         double tinggiHasil = tinggiAir(r, t);
         double hasilPersentase = persentaseAir(t, h);

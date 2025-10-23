@@ -22,9 +22,13 @@ public class Jurnal01 {
             return "siang";
         } else if (jam >= 15 && jam <= 17) {
             return "sore";
-        } else {
+        } else if (jam >= 18 && jam <= 5){
             return "malam";
         }
+        else {
+          return "";
+        }
+     
     }
 
     private static void tampilkanSapaan(String nama, String sapaan) {
