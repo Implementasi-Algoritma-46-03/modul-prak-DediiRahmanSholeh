@@ -2,51 +2,34 @@ import java.util.Scanner;
 
 public class Jurnal02 {
 
-    public static void main(final String[] args) {
-        Scanner input = new Scanner(System.in);
-        
-        String lirik = input.nextLine();
-        int panjang = lirik.length();
-        int sisa = panjang % 5;
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String lirik = sc.nextLine();
 
-        char hurufPengganti = tentukanHurufPengganti(sisa);
-        String hasil = ubahVokal(lirik, hurufPengganti);
+        char vokalPengganti = tentukanVokal(lirik.length());
+        String hasil = ubahHuruf(lirik, vokalPengganti);
 
         System.out.println(hasil);
     }
 
-    private static char tentukanHurufPengganti(int sisa) {
-        switch (sisa) {
-            case 0:
-                return 'A';
-            case 1:
-                return 'E';
-            case 2:
-                return 'I';
-            case 3:
-                return 'O';
-            case 4:
-                return 'U';
-            default:
-                return 'A';
-        }
+    static char tentukanVokal(int panjang) {
+        int sisa = panjang % 5;
+        if (sisa == 0)
+            return 'a';
+        else if (sisa == 1)
+            return 'e';
+        else if (sisa == 2)
+            return 'i';
+        else if (sisa == 3)
+            return 'o';
+        else if (sisa == 4)
+            return 'u';
+        else
+            return 'a';
     }
 
-    private static String ubahVokal(String teks, char pengganti) {
-        String vokal = "AEIOUaeiou";
-        StringBuilder hasil = new StringBuilder();
-
-        for (char c : teks.toCharArray()) {
-            if (vokal.indexOf(c) != -1) {
-                if (Character.isUpperCase(c)) {
-                    hasil.append(Character.toUpperCase(pengganti));
-                } else {
-                    hasil.append(Character.toLowerCase(pengganti));
-                }
-            } else {
-                hasil.append(c);
-            }
-        }
-        return hasil.toString();
+    static String ubahHuruf(String lirik, char vokal) {
+        return lirik.replaceAll("[AaEeIiOoUu]", String.valueOf(vokal));
     }
+
 }
