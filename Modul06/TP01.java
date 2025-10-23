@@ -2,22 +2,38 @@ import java.util.Scanner;
 
 public class TP01 {
 
-    private static double toCelcius(double f) {
-        return (f - 32) * 5 / 9;
-    }
-
-    private static double toReamur(double f) {
-        return (f - 32) * 4 / 9;
-    }
-
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-        double r1 = input.nextDouble();
-        double r2 = input.nextDouble();
-        double r3 = input.nextDouble();
+        // Membaca tiga buah bilangan riil (Fahrenheit)
+        double fahrenheit1 = scanner.nextDouble(); 
+        double fahrenheit2 = scanner.nextDouble();
+        double fahrenheit3 = scanner.nextDouble();
 
-        System.out.printf("%.2f %.2f %.2f%n", toCelcius(r1), toCelcius(r2), toCelcius(r3));
-        System.out.printf("%.2f %.2f %.2f%n", toReamur(r1), toReamur(r2), toReamur(r3));
+        // Menghitung konversi Celcius menggunakan method
+        double celcius1 = fahrenheitToCelcius(fahrenheit1);
+        double celcius2 = fahrenheitToCelcius(fahrenheit2);
+        double celcius3 = fahrenheitToCelcius(fahrenheit3);
+
+        // Menghitung konversi Reamur menggunakan method
+        double reamur1 = fahrenheitToReamur(fahrenheit1);
+        double reamur2 = fahrenheitToReamur(fahrenheit2);
+        double reamur3 = fahrenheitToReamur(fahrenheit3);
+
+        // Menampilkan keluaran sesuai format AUTOGRADER
+        // Celcius: 1 angka desimal (%.1f) dan diberi label
+        System.out.printf("Celcius: %.1f %.1f %.1f\n", celcius1, celcius2, celcius3);
+        // Reamur: 2 angka desimal (%.2f) dan diberi label
+        System.out.printf("Reamur: %.2f %.2f %.2f\n", reamur1, reamur2, reamur3);
+
+        scanner.close();
+    }
+
+    private static double fahrenheitToCelcius(double fahrenheit) { 
+        return (fahrenheit - 32) * 5.0 / 9.0;
+    }
+
+    private static double fahrenheitToReamur(double fahrenheit) { 
+        return (fahrenheit - 32) * 4.0 / 9.0;
     }
 }
