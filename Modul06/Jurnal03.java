@@ -1,54 +1,33 @@
 import java.util.Scanner;
-
 public class Jurnal03 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        double r = sc.nextDouble();
-        double h = sc.nextDouble();
-        double t = sc.nextDouble();
-
-        hitungDanTampilkan(r, h, t);
+    public static double maxVol(double a, double b) {
+        double phi = 3.14159;
+        double maksVol = phi * (a * a) * b;
+        return maksVol;
     }
 
-    private static void hitungDanTampilkan(double r, double h, double t) {
-        double volumeMaks = hitungVolume(r, h);
-        double volumeSekarang = hitungVolume(r, t);
-        double persen = hitungPersen(t, h);
-
-        tampilkanHasil(volumeMaks, volumeSekarang, persen);
+    public static double tinggiAir(double c, double d) {
+        double phi = 3.14159;
+        double tinggiAir = phi * (c * c) * d;
+        return tinggiAir;
     }
 
-    private static double hitungVolume(double r, double tinggi) {
-        double pi = 3.14;
-        return pi * r * r * tinggi;
+    public static double persentaseAir(double e, double f) {
+        double persentase = (double)e / f * 100;
+        return persentase;
     }
 
-    private static double hitungPersen(double t, double h) {
-        double persen = (t / h) * 100;
-        return persen;
-    }
+    public static void main(final String[] args) {
+        Scanner input = new Scanner(System.in);
+        int r = input.nextInt(); //jari-jari
+        int h = input.nextInt(); //tinggi
+        int t = input.nextInt(); //tinggi air
 
-    private static void tampilkanHasil(double volMaks, double volSekarang, double persen) {
+        double hasilVol = maxVol(r, h);
+        double tinggiHasil = tinggiAir(r, t);
+        double hasilPersentase = persentaseAir(t, h);
 
-        String kategori;
-        switch ((int) persen / 25) {
-            case 0:
-                kategori = "";
-                break;
-            case 1:
-                kategori = "";
-                break;
-            case 2:
-                kategori = "";
-                break;
-            case 3:
-                kategori = "";
-                break;
-            default:
-                kategori = "";
-        }
-
-        System.out.printf("%.2f %.2f %.1f%", volMaks, volSekarang, persen, kategori);
+        System.out.printf("%.2f %.2f %.1f%%", hasilVol, tinggiHasil, hasilPersentase);
+        
     }
 }
