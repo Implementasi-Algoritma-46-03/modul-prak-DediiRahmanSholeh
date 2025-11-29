@@ -2,191 +2,123 @@
   "tests": [
     {
       "name": "Jurnal01a",
-      "setup": "javac Modul06/Jurnal01.java",
-      "run": "java -cp Modul06 Jurnal01",
-      "input": "Dira\nRadi\n16",
-      "output": "Halo, Dira. Selamat sore.\nHalo, Radi. Selamat sore.",
+      "setup": "javac Modul12/Jurnal01.java",
+      "run": "java -cp Modul12 Jurnal01",
+      "input": "2\n1 2\n3 4",
+      "output": "3 4\n1 2",
       "comparison": "included",
       "timeout": 10,
       "points": 10
     },
     {
       "name": "Jurnal01b",
-      "setup": "javac Modul06/Jurnal01.java",
-      "run": "java -cp Modul06 Jurnal01",
-      "input": "Marisa\nReimu\n8",
-      "output": "Halo, Marisa. Selamat pagi.\nHalo, Reimu. Selamat pagi.",
+      "setup": "javac Modul12/Jurnal01.java",
+      "run": "java -cp Modul12 Jurnal01",
+      "input": "3\n1 2 3\n4 5 6\n7 8 9",
+      "output": "7 8 9\n4 5 6\n1 2 3",
       "comparison": "included",
       "timeout": 10,
-      "points": 10
+      "points": 0
     },
     {
       "name": "Jurnal02a",
-      "setup": "javac Modul06/Jurnal02.java",
-      "run": "java -cp Modul06 Jurnal02",
-      "input": "Potong bebek angsa masak di kuali",
-      "output": "Potong bobok ongso mosok do koolo",
+      "setup": "javac Modul12/Jurnal02.java",
+      "run": "java -cp Modul12 Jurnal02",
+      "input": "3\n 1 0 0\n1 2 2\n0 0 1",
+      "output": "?",
       "comparison": "included",
       "timeout": 10,
-      "points": 15
+      "points": 10
     },
     {
       "name": "Jurnal02b",
-      "setup": "javac Modul06/Jurnal02.java",
-      "run": "java -cp Modul06 Jurnal02",
-      "input": "Cicak cicak di dinding diam diam merayap",
-      "output": "Cacak cacak da dandang daam daam marayap",
+      "setup": "javac Modul12/Jurnal02.java",
+      "run": "java -cp Modul12 Jurnal02",
+      "input": "3\n1 0 0\n1 2 2\n1 0 0",
+      "output": "O",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Jurnal03a",
+      "setup": "javac Modul12/Jurnal03.java",
+      "run": "java -cp Modul12 Jurnal03",
+      "input": "5",
+      "output": "1 16 15 14 13\n2 17 24 23 12\n3 18 25 22 11\n4 19 20 21 10\n5 6 7 8 9",
       "comparison": "included",
       "timeout": 10,
       "points": 15
     },
     {
-      "name": "Jurnal02c",
-      "setup": "javac Modul06/Jurnal02.java",
-      "run": "java -cp Modul06 Jurnal02",
-      "input": "Theyre faint these feelings In an illusion that makes me doubt my eyes",
-      "output": "Thayra faant thasa faalangs An an allasaan that makas ma daabt my ayas",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 0
-    },
-    {
-      "name": "Jurnal02d",
-      "setup": "javac Modul06/Jurnal02.java",
-      "run": "java -cp Modul06 Jurnal02",
-      "input": "Each time dreams and reality collide Nothing changes between todays street corners",
-      "output": "Iich timi driims ind riility cillidi Nithing chingis bitwiin tidiys striit cirnirs",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 0
-    },
-    {
-      "name": "Jurnal03a",
-      "setup": "javac Modul06/Jurnal03.java",
-      "run": "java -cp Modul06 Jurnal03",
-      "input": "7 10 4",
-      "output": "1539.38 615.75 40.0%",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 10
-    },
-    {
       "name": "Jurnal03b",
-      "setup": "javac Modul06/Jurnal03.java",
-      "run": "java -cp Modul06 Jurnal03",
-      "input": "7 12 5",
-      "output": "1847.25 769.69 41.7%",
+      "setup": "javac Modul12/Jurnal03.java",
+      "run": "java -cp Modul12 Jurnal03",
+      "input": "3",
+      "output": "1 8 7\n2 9 6\n3 4 5",
       "comparison": "included",
       "timeout": 10,
-      "points": 10
+      "points": 15
     },
     {
       "name": "TP01a",
-      "setup": "javac Modul06/TP01.java",
-      "run": "java -cp Modul06 TP01",
-      "input": "62.6 79.0 89.6",
-      "output": "Celcius: 17.0 26.1 32.0\nReamur: 13.60 20.89 25.60",
+      "setup": "javac Modul12/TP01.java",
+      "run": "java -cp Modul12 TP01",
+      "input": "2\n1 2\n3 4",
+      "output": "10",
       "comparison": "included",
       "timeout": 10,
-      "points": 10
+      "points": 5
+    },
+    {
+      "name": "TP01a",
+      "setup": "javac Modul12/TP01.java",
+      "run": "java -cp Modul12 TP01",
+      "input": "3\n1 2 3\n4 5 6\n7 8 9",
+      "output": "45",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
     },
     {
       "name": "TP02a",
-      "setup": "javac Modul06/TP02.java",
-      "run": "java -cp Modul06 TP02",
-      "input": "Pak, hari ini saya mau minta izin, soalnya lagi ada keperluan mendadak yang urgent, jadi belum bisa mengikuti mata kuliah Bapak, sebagai gantinya saya harap bisa diberi tugas tambahan untuk mengganti ketidakhadiran saya.",
-      "output": "Pk, hr n sy m mnt zn, slny lg d kprln mnddk yng rgnt, jd blm bs mngkt mt klh Bpk, sbg gntny sy hrp bs dbr tgs tmbhn ntk mnggnt ktdkhdrn sy.",
+      "setup": "javac Modul12/TP02.java",
+      "run": "java -cp Modul12 TP02",
+      "input": "3\n1 2 3\n4 5 6\n7 8 9\n10 11 12\n13 14 15\n16 17 18",
+      "output": "11 13 15\n17 19 21\n23 25 27",
       "comparison": "included",
       "timeout": 10,
-      "points": 10
+      "points": 5
     },
     {
       "name": "TP02b",
-      "setup": "javac Modul06/TP02.java",
-      "run": "java -cp Modul06 TP02",
-      "input": "Maboroshi ka? Sajou no roukaku na no ka?",
-      "output": "Mbrsh k? Sj n rkk n n k?",
+      "setup": "javac Modul12/TP02.java",
+      "run": "java -cp Modul12 TP02",
+      "input": "2\n5 10\n15 20\n25 30\n14 40",
+      "output": "30 40\n29 60",
       "comparison": "included",
       "timeout": 10,
-      "points": 0
-    },
+      "points": 5
+    }, 
     {
       "name": "TP03a",
-      "setup": "javac Modul06/TP03.java",
-      "run": "java -cp Modul06 TP03",
-      "input": "Persegi\n3",
-      "output": "9 12",
+      "setup": "javac Modul12/TP03.java",
+      "run": "java -cp Modul12 TP03",
+      "input": "3\n1 2 3\n4 5 6\n7 8 9\n20 21 22\n23 24 25\n26 27 28",
+      "output": "144 150 156\n351 366 381\n558 582 606",
       "comparison": "included",
       "timeout": 10,
-      "points": 2
+      "points": 5
     },
     {
       "name": "TP03b",
-      "setup": "javac Modul06/TP03.java",
-      "run": "java -cp Modul06 TP03",
-      "input": "Persegi Panjang\n2 3",
-      "output": "6 10",
+      "setup": "javac Modul12/TP03.java",
+      "run": "java -cp Modul12 TP03",
+      "input": "2\n1 2\n3 4\n5 6\n7 8",
+      "output": "19 22\n43 50",
       "comparison": "included",
       "timeout": 10,
-      "points": 3
-    },{
-      "name": "TP03c",
-      "setup": "javac Modul06/TP03.java",
-      "run": "java -cp Modul06 TP03",
-      "input": "Segitiga\n3 4",
-      "output": "6 12",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 2
-    },
-    {
-      "name": "TP03d",
-      "setup": "javac Modul06/TP03.java",
-      "run": "java -cp Modul06 TP03",
-      "input": "Lingkaran\n14",
-      "output": "153.86 43.96",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 3
-    },
-    {
-      "name": "TP03e",
-      "setup": "javac Modul06/TP03.java",
-      "run": "java -cp Modul06 TP03",
-      "input": "Persegi\n5",
-      "output": "25 20",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 0
-    },
-    {
-      "name": "TP03f",
-      "setup": "javac Modul06/TP03.java",
-      "run": "java -cp Modul06 TP03",
-      "input": "Persegi Panjang\n4 5",
-      "output": "20 18",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 0
-    },{
-      "name": "TP03g",
-      "setup": "javac Modul06/TP03.java",
-      "run": "java -cp Modul06 TP03",
-      "input": "Segitiga\n5 12",
-      "output": "30 30",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 0
-    },
-    {
-      "name": "TP03h",
-      "setup": "javac Modul06/TP03.java",
-      "run": "java -cp Modul06 TP03",
-      "input": "Lingkaran\n28",
-      "output": "615.44 87.92",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 0
+      "points": 5
     }
   ]
 }
